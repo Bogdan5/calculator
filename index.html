@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Online calculator</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <script src="JavaScript.js"></script>
+    
+</head>
+<body>
+    <div class="calculator">
+        <h2>ONLINE CALCULATOR</h2>
+        <div class="display">
+            <p id="demo">0</p>
+            <p id="demo2">0</p>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button type="button" onclick="calculator.allClear()" class="col-2" value="1">AC</button>
+                <button type="button" onclick="calculator.clearLast()" class="col-1" value="1">CE</button>
+                <button type="button" onclick="calculator.addKey('div')" class="col-1" value="div">&#247;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="calculator.addKey(1)" class="col-1" value="1">1</button>
+                <button type="button" onclick="calculator.addKey(2)" class="col-1" value="2">2</button>
+                <button type="button" onclick="calculator.addKey(3)" class="col-1" value="3">3</button>
+                <button type="button" onclick="calculator.addKey('multiplied')" class="col-1" value="multiplied">&#215;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="calculator.addKey(4)" class="col-1" value="4">4</button>
+                <button type="button" onclick="calculator.addKey(5)" class="col-1" value="5">5</button>
+                <button type="button" onclick="calculator.addKey(6)" class="col-1" value="6">6</button>
+                <button type="button" onclick="calculator.addKey('df')" class="col-1" value="dif">-</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="calculator.addKey(7)" class="col-1" value="7">7</button>
+                <button type="button" onclick="calculator.addKey(8)" class="col-1" value="8">8</button>
+                <button type="button" onclick="calculator.addKey(9)" class="col-1" value="9">9</button>
+                <button type="button" onclick="calculator.addKey('sum')" class="col-1" value="sum">+</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="calculator.addKey(0)" class="col-2" value="0">0</button>
+                <button type="button" onclick="calculator.addKey('.')" class="col-1" value=".">.</button>
+                <button type="button" onclick="calculator.getResults()" class="col-1" value="equal">=</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

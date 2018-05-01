@@ -1,0 +1,80 @@
+﻿body {
+    background-color: #262626;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.calculator {
+    background-color: #a6a6a6;
+    margin: 20px auto;
+    min-height: 250px;
+    width: 350px;
+}
+
+.display {
+    margin:5px 20px;
+    padding:0;
+}
+
+div>h2{
+    text-align:center;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 25%;}
+
+.col-2 {width: 50%;}
+
+.col-3 {width: 75%;}
+
+.col-4 {width: 100%;}
+
+.buttons{
+    padding:10px;
+}
+button {
+    font-size: 20px;
+    border: 2px solid #a6a6a6;
+}
+    button:focus {
+        outline: 0;
+    }
+    button:visited {
+        outline:0;
+    }
+
+    button:hover {
+        background-color: #8c8c8c;
+    }
+
+[id^="demo"] {
+    padding:10px;
+    margin:0 5px;
+    text-align:right;
+}
+
+#demo {
+    font-size: 20px;
+    color: #737373;
+    opacity:0;
+}
+
+#demo2 {
+    font-size:35px;
+}
